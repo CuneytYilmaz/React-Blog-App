@@ -1,3 +1,7 @@
 .text-xs-right {
   text-align: right;
 }
+
+.has-danger > .text-help {
+  color: #d9534f;
+}
