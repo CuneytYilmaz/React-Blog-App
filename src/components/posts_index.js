@@ -6,12 +6,10 @@ import { Link } from "react-router";
 class PostsIndex extends Component {
   // This lifecycle method runs only this component render to DOM
   componentWillMount() {
-    console.log("now");
     this.props.fetchPosts();
   }
 
   renderPosts() {
-    console.log(this.props.posts);
     return this.props.posts.map(post => {
       return (
         <Link to={`posts/${post.id}`} key={post.id}>
@@ -38,7 +36,7 @@ class PostsIndex extends Component {
         </div>
         <h3>Posts</h3>
         <ul className="list-group">
-          {this.renderPosts()}
+          {this.props.posts.length === 0 ? "Loading..." : this.renderPosts()}
         </ul>
       </div>
     );

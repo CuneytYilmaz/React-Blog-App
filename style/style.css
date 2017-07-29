@@ -18,16 +18,6 @@ form button {
   cursor: pointer;
 }
 
-/* a > .list-group-item:first-child {
-  border-top-right-radius: 4px !important;
-  border-top-left-radius: 4px !important;
-}
-
-a > .list-group-item:last-child {
-  border-bottom-right-radius: 4px !important;
-  border-bottom-left-radius: 4px !important;
-} */
-
 .list-group-item:last-child {
   margin-bottom: -1px !important;
   border-bottom-right-radius: 0px !important;
