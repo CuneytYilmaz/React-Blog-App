@@ -2,6 +2,18 @@
   text-align: right;
 }
 
+.pull-xs-right {
+  float: right;
+}
+
 .has-danger > .text-help {
   color: #d9534f;
+}
+
+form a {
+  margin-left: 5px;
+}
+
+form button {
+  cursor: pointer;
 }
