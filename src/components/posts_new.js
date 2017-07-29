@@ -10,6 +10,7 @@ class PostsNew extends Component {
 
   onSubmit(props) {
     this.props.createPost(props).then(() => {
+      // when request is succeed, navigate the url to index with this code;
       this.context.router.push("/");
     });
   }

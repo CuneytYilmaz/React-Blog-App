@@ -17,3 +17,34 @@ form a {
 form button {
   cursor: pointer;
 }
+
+/* a > .list-group-item:first-child {
+  border-top-right-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+}
+
+a > .list-group-item:last-child {
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+} */
+
+.list-group-item:last-child {
+  margin-bottom: -1px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.list-group > a:first-child > .list-group-item {
+  border-top-right-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+}
+
+.list-group > a:last-child > .list-group-item {
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
